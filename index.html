@@ -1,34 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <style>
+      body {
+        font-family: "Figtree", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 100vh;
+        overflow: hidden;
+        background: hsl(47, 88%, 63%);
+      }
+      .container {
+        max-width: 267px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 22px;
+        border: 1px solid;
+        padding: 17px;
+        box-shadow: 9px 9px 0px rgba(0, 0, 0);
+      }
+      .container img {
+        height: inherit;
+        width: inherit;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
 
-  Learning
+      .container .learning {
+        max-width: fit-content;
+        margin-top: 10px;
+        padding: 6px 16px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        background: hsl(47, 88%, 63%);
+      }
 
-  Published 21 Dec 2023
+      p {
+        font-size: 14px;
+      }
+      h3 {
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+      }
+      .peragraph {
+        color: hsl(0, 0%, 42%);
+        line-height: 17px;
+      }
+      .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+      }
+      .user-profile img {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 0;
+      }
+      .user-profile .user-name {
+        text-align: center;
+        font-weight: 800;
+      }
+      @media (max-width: 1024px) {
+        .container {
+          max-width: 230px;
+        }
+      }
 
-  HTML & CSS foundations
+      @media (max-width: 320px) {
+        .container {
+          max-width: 200px;
+        }
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/images/illustration-article.svg" alt="" />
+      <span class="learning">Learning</span>
+      <p>Published 21 Dec 2023</p>
+      <h3>HTML & CSS foundations</h3>
+      <p class="peragraph">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="user-profile">
+        <img src="assets/images/image-avatar.webp" alt="Greg Hooper" />
+        <span class="user-name">Greg Hooper</span>
+      </div>
+    </div>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
