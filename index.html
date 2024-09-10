@@ -31,7 +31,7 @@
         background: hsl(47, 88%, 63%);
       }
       .container {
-        max-width: 267px;
+        max-width: 380px;
         display: flex;
         flex-direction: column;
         background: white;
@@ -52,47 +52,74 @@
         margin-top: 10px;
         padding: 6px 16px;
         border-radius: 5px;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 500;
         color: black;
         background: hsl(47, 88%, 63%);
       }
 
       p {
-        font-size: 14px;
+        font-size: 18px;
       }
       h3 {
+        font-size: 25px;
         margin-block-start: 5px;
         margin-block-end: 5px;
       }
       .peragraph {
         color: hsl(0, 0%, 42%);
-        line-height: 17px;
+        font-size: 18px;
+        line-height: 24px;
       }
       .user-profile {
         display: flex;
         align-items: center;
         gap: 10px;
-        height: auto;
+
+        background-color: aquamarine;
       }
       .user-profile img {
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
         margin-bottom: 0;
       }
       .user-profile .user-name {
+        font-size: larger;
         text-align: center;
         font-weight: 800;
       }
-      @media (max-width: 1024px) {
+      @media (max-width: 768px) {
         .container {
-          max-width: 230px;
+          max-width: 250px;
+        }
+        .container .learning {
+          font-size: 15px;
+        }
+        p {
+          font-size: 13px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        .peragraph {
+          font-size: 13px;
+        }
+        .user-profile img {
+          height: 35px;
+          width: 35px;
+        }
+        .user-profile .user-name {
+          font-size: 15px;
+          text-align: center;
         }
       }
 
       @media (max-width: 320px) {
         .container {
-          max-width: 200px;
+          max-width: 250px;
+        }
+        .container .learning {
+          font-size: 15px;
         }
       }
       .attribution {
